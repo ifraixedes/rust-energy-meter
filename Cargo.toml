@@ -2,7 +2,14 @@
 name = "electricity-meter"
 version = "0.0.1"
 edition = "2021"
+authors = ["Ivan Fraixedes <ivan@fraixed.es>"]
+description = """\
+Read "your electricity consumption" CSV data file downloaded from e-distribución to sum them up \
+according to the 3 day time periods.
+"""
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4.22"
+clap = { version = "4.0.10", features = ["derive"] }
